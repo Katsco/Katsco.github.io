@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<!--
+  COLLABORATORS:
+  Katlin Scott
+-->
+
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Katlin Scott">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Word Finder</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="KSU-Logo.ico">
+  <!-- Imported Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    @font-face {
+      font-family: TiltPrism;
+      src: url(TiltPrism-Regular.ttf);
+    }
+  </style>
+
+  <!-- Load any supplemental Javascript libraries here -->
+  <!--<script type="text/javascript" src="jquery-1.5.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Instead of using the given jQuery file, I used the more updated version call -->
+  <script type="text/javascript" src="words-small.json"></script>
+
+  <!-- Uncomment this to get the full 45,407 word dictionary
+  <script type="text/javascript" src="words-large.json"></script>
+  -->
+
+  <script type="text/javascript" src="dictionary.js"></script>
+  <script type="text/javascript">
+  // <![CDATA[
+
+                                                                                      /* jQuery */
+
+  // This allows the Javascript code inside this block to only run when the page
+  // has finished loading in the browser.
+  $(document).ready(function() {
+    //var dict = new Dictionary(words);
+
+    // Your code here
+    // Variable declaration
+    let words = [];
+    var dictionary;
+
+    // Load words from file
+    $.getJSON("words-small.json", function(data) {
+      words = data;
+      dictionary = new Dictionary(words);
+
+      populateWords(words);
+      updateWordCount(words.length, "");
+    });
+
+    // Search function
+    $("#userInput").keyup(function() {
+      var found = dictionary.search($('#userInput').val());
+      $('#wordList').empty();
+      populateWords(found);
+      updateWordCount(found.length, $('#userInput').val());
+    });
+
+    // Clear function in jQuery for consistency
+    $('#clear').click(function() {
+      $('#wordList').empty();
+      $('#userInput').val('');
+      populateWords(words);
+      updateWordCount(words.length, "");
+    });
+
+    // Populates the word list
+    function populateWords(words) {
+      for (var i = 0; i < words.length; i++) {
+        var word = $("<div></div>").text(words[i]);
+        $("#wordList").append(word);
+      }
+    };
+
+    // Updates word count according to user input
+    function updateWordCount(wordCount, userInput) {
+      var display = '';
+      if (userInput === '') {
+        display = wordCount + " words total";
+      } else {
+        display = wordCount + " word(s) containing " + "'" + userInput + "'";
+      }
+      $('#wordCount').text(display);
+    };
+
+    // Extra Stuff
+    $("#userInput").focus(function(){
+      $(this).css("background-color", "#ffe57a");
+    });
+    $("#userInput").blur(function(){
+      $(this).css("background-color", "white");
+    });
+
+  });
+
+  // ]]>
+</script>
+                                                                                  <!-- CSS -->
+<style type="text/css">
+/* Your CSS here */
+html {
+    background-color: #eee;
+}
+/* Order: top right bottom left*/
+body {
+  margin: 50px 40px 10px 50px;
+}
+#Searchbar {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#wordList {
+  height: 600px;
+  width: 450px;
+  overflow: scroll;
+  overflow-x: hidden;
+  resize: both;
+
+  border: 2px dashed;
+  margin: auto;
+  padding: 10px;
+}
+#Header {
+  background-color: #f7b72f;
+  text-align: center;
+  font-family: "Audiowide", sans-serif;
+}
+#Footer {
+  background-color: #f7b72f;
+  text-align: center;
+  font-family: "TiltPrism", "Poppins", "Montserrat", "Courier New", monospace;
+}
+
+</style>
+</head>
+
+                                                                                  <!-- HTML -->
+<body>
+<!-- Your HTML here -->
+  <div id="Header">
+    <header>
+      <h1>Word Finder</h1>
+    </header>
+  </div>
+
+  <div>
+    <div id="Searchbar">
+      <p>Type your word in the search box and see if it is in the list</p>
+      <input type="text" id="userInput" placeholder="Search">
+      <button id="clear">Clear</button>
+      <span id="wordCount"></span>
+    </div>
+    <div id="wordList"></div>
+  </div>
+
+  <div id="Footer">
+    <footer>
+      <h1>Made By: Katlin Scott <br> Fall 2023</h1>
+    </footer>
+  </div>
+
+</body>
+</html>

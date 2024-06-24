@@ -1,0 +1,244 @@
+html {
+  scroll-behavior: smooth;
+  color: white;
+}
+
+Body {
+    background-color: #100e17;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .bodyTwo {
+    background-color: #2f2d3f;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .Header {
+    background: #2b2b2b;
+    padding: 80px;
+    font-size: 2vmin;
+    font-family: JetBrains Mono, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e4bb68;
+  }
+
+
+  .Footer {
+    display: block;
+    text-align: center;
+    line-height: 0.9;
+    background-color: #36394E;
+    color: #EDF2F6;
+    margin-top: 70px;
+    margin-bottom: 0;
+    padding: 30px;
+  }
+
+  .div1 {
+    padding: 70px;
+    background-color: #2f2d3f;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .div2 {
+    padding: 70px;
+    background-color: #100e17;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .classHeader {
+    text-align: center;
+    color: #df4f4f;
+  }
+
+  .projectHeader {
+    text-align: center;
+    color: #d4ac3d;
+  }
+  
+  .col {
+    float: left;
+    width: 33%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    /*background-color: #6e538a;*/
+    background-color: #0c2b53;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Poppins", "Arial", "Helvetica", "sans-serif";
+    opacity: 1;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #ff9696;
+    color: #3a2c46;
+    transition: 0.3s;
+  }
+
+  a:link.bodylinks {
+    color: rgb(86, 235, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited.bodylinks {
+    color: rgb(86, 235, 255);
+    background-color: transparent;
+    text-decoration: none;
+  } /*Original color: rgb(229, 140, 247);*/
+  
+  a:hover.bodylinks {
+    color: rgb(9, 255, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active.bodylinks {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .teambutton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #3C75BE;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .teambutton:hover {
+    background-color: #509cff;
+  }
+  
+  .teambutton:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .Title {
+    text-align: center;
+    font-family: "Bagel Fat One", "Audiowide", "Montserrat", "Courier New", monospace;
+    color: white;
+  }
+
+  .quoteHeader {
+    font-family: Georgia;
+  }
+  
+  .col {
+    float: left;
+    width: 25%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col2 {
+    float: left;
+    width: 50%;
+  }
+
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*.mcc {
+    text-align: center;
+    font-family: "Bagel Fat One", "Audiowide", "Montserrat", "Courier New", monospace;
+  }*/
+
+  .mcc {
+    text-align: center;
+    font-family: "Josefin Sans", "Montserrat", "Courier New", monospace;
+  }
+
+  .headalt {
+    text-align: center;
+    font-family: "Bagel Fat One", "Audiowide", "Montserrat", "Courier New", monospace;
+  }

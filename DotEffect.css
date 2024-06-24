@@ -1,0 +1,16 @@
+.dot {
+    height: 15px;
+    width: 15px;
+    /*background-color: #bbb;*/
+    border-radius: 50%;
+    display: inline-block;
+    animation: ColorChange 5s linear 2s infinite alternate;
+  }
+
+  @keyframes ColorChange {
+    0%   {background-color:red}
+    25%  {background-color:yellow}
+    50%  {background-color:blue}
+    75%  {background-color:green}
+    100% {background-color:red}
+  }

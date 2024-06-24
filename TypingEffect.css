@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+
+.animBaseTyping {
+    /*background: #fff7ee;*/
+    font-family: Fira Mono;
+    /*height: 100vh;
+    width: 100vw;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing {
+    position: relative;
+    width: 43ch;
+    font-weight: bold;
+    animation: type 5s steps(43), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
