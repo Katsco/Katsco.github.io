@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Katlin Scott: NCG Cinema Movie Showings</title>
+    <title>Katlin Scott: Menu Application</title>
     <link rel="icon" type="image/x-icon" href="KS-Initials-BG.ico"> <!-- Make a custom favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Linked CSS Files-->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="text-roller.css">
-    <link rel="stylesheet" href="TypingEffect.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../text-roller.css">
+    <link rel="stylesheet" href="../TypingEffect.css">
 
     <!-- Fonts Here -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -28,31 +28,8 @@
     <script src="scrambling-text.js"></script>
   </head>
 
-  <!-- Create separate pages for everything once index gets sorted -->
-  <body style="margin-top: 49px;" id="home">
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="ClassProjects.html">Class Projects</a>
-      <!--<a href="">Personal Projects</a>-->
-      <a href="index.html#Contact">Contact</a>
-      <!--
-      <a href="">Community Work</a>
-      <a href="">Competitive Events</a>
-      <a href="">Activities</a>
-      -->
-      <div style="float:right">
-        <a href="mailto:Katlin.Scott1@gmail.com" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/gmail.png" alt="Gmail Icon by Pixel perfect" style="width:20px;height:20px;">
-        </a>
-        <a href="https://www.linkedin.com/in/Katsco" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/linkedin.png" alt="LinkedIn Icon by riajulislam" style="width:20px;height:20px;">
-        </a>
-        <a href="https://www.github.com/Katsco" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/github.png" alt="GitHub Icon by riajulislam" style="width:20px;height:20px;">
-        </a>
-      </div>
-    </div>
+  <!-- Header -->
+  <div data-include="../Header.html"></div>
 
     <!-- <div>
       <video autoplay muted loop id="sampleVideo" width="100%">
@@ -67,18 +44,25 @@
         <h1 style="text-align: center;">
           <span style="color:#808073;">&lt;</span>
           <span style="color:#378dd6;">CS</span>
-          <span style="color:#8cdcdd;">3410 </span>
-          <span style="color:#ce8455;">Project</span>
+          <span style="color:#8cdcdd;">4712 </span>
+          <span style="color:#ce8455;">Assignment</span>
           <span style="color:#808073;">&gt;</span>
           <br>
-          <span style="color:white;">NCG Cinema Movie Showings </span>
+          <span style="color:white;">Menu Application</span>
           <br>
           <span style="color:#808073;">&lt;</span>
           <span style="color:#808073;">/</span>
           <span style="color:#808073;">&gt;</span>
           </h1>
-    </div>
+      </div>
 
+    <!--
+    <div class="Title">
+      <hr width="84%" color="#6F8A53" size="3px">
+      <h1>Class Projects by Course</h1>
+      <hr width="84%" color="#6F8A53" size="3px">
+    </div>
+    -->
 
     <div class="div2" id="team" style="padding:20px">
       <hr width="84%" color="#6F8A53" size="3px">
@@ -86,9 +70,9 @@
 
     <div class="Body" style="text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         <p>
-            In our collaborative project, our team focused on crafting and implementing a specialized Microsoft Access 
-            <br>database aimed at effectively organizing information related to movie screenings, 
-            <br>theater room assignments, and ticket sales data.
+            For this assignment, I developed a GUI application enabling seamless online ordering for a restaurant of my choosing, 
+            <br>opting for a fictional establishment I had previously designed during my high school years for a comparable 
+            <br>assignment in a similar course.
         </p>
       </div>
 
@@ -96,26 +80,22 @@
       <hr width="84%" color="#6F8A53" size="3px">
     </div>
 
-    <div style="margin-left:auto;margin-right:auto;text-align:center">
-        <object data="/Documents/CS3410-Assignment5_Redacted.pdf" type="application/pdf" width="75%" height="1000px">
-            <p>Unable to display PDF file. <a href="/Documents/CS3410-Assignment5_Redacted.pdf">Download</a> instead.</p>
-        </object>
+    <div style="margin-left:auto;margin-right:auto;text-align:center;padding-top:40px;padding-bottom:10px;">
+      <h1 class="mcc">Menu Application Video</h1>
+      <video width="1280" height="720" controls>
+          <source src="/Videos/CS4712_Assignment2-KS.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
     </div>
 
-    <div class="div2" id="team">
+    <div class="div2" id="team" style="padding:40px">
       <hr width="84%" color="#6F8A53" size="3px">
       <!--<button class="teambutton" type="button" onclick="window.location.href='index.html#team';">More</button>-->
     </div>
 
-    <div class="Footer">
-      <p class="quoteHeader" style="font-size: 100%; line-height: 130%">
-        "Anything worth having is worth working for.
-        <br>
-        Anything worth doing is worth doing well."
-        <br>
-        - Reginald Ferguson
-        </p>
-    </div>
+    <!-- Footer -->
+    <div data-include="../Footer.html"></div>
+    <script src="../HF-Loader-Script.js"></script>
 
   </body>
 </html>

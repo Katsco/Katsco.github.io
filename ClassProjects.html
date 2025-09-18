@@ -28,31 +28,8 @@
     <script src="scrambling-text.js"></script>
   </head>
 
-  <!-- Create separate pages for everything once index gets sorted -->
-  <body style="margin-top: 49px;" id="home">
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="ClassProjects.html">Class Projects</a>
-      <!--<a href="">Personal Projects</a>-->
-      <a href="index.html#Contact">Contact</a>
-      <!--
-      <a href="">Community Work</a>
-      <a href="">Competitive Events</a>
-      <a href="">Activities</a>
-      -->
-      <div style="float:right">
-        <a href="mailto:Katlin.Scott1@gmail.com" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/gmail.png" alt="Gmail Icon by Pixel perfect" style="width:20px;height:20px;">
-        </a>
-        <a href="https://www.linkedin.com/in/Katsco" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/linkedin.png" alt="LinkedIn Icon by riajulislam" style="width:20px;height:20px;">
-        </a>
-        <a href="https://www.github.com/Katsco" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/github.png" alt="GitHub Icon by riajulislam" style="width:20px;height:20px;">
-        </a>
-      </div>
-    </div>
+  <!-- Header -->
+  <div data-include="Header.html"></div>
 
     <!-- <div>
       <video autoplay muted loop id="sampleVideo" width="100%">
@@ -118,7 +95,7 @@
             <h3 class="projectHeader">Course Project:</span>
             </h3>
             <p>
-                <a href="NonMainPages/MobileCookingCompanion.html" class="bodylinks" target="_blank">Mobile Cooking Companion</a> <!-- CSS Class declaration does not work here; fix it -->
+                <a href="ClassProjects/MobileCookingCompanion.html" class="bodylinks" target="_blank">Mobile Cooking Companion</a> <!-- CSS Class declaration does not work here; fix it -->
             </p>
           </div>
   
@@ -141,7 +118,7 @@
                 <br> Database Systems
             </h2>
             <h3 class="projectHeader">Group Project:</h3>
-            <p><a href="NonMainPages/NCGCinemaMovieShowings.html" class="bodylinks" target="_blank">NCG Cinema Movie Showings</a>
+            <p><a href="ClassProjects/NCGCinemaMovieShowings.html" class="bodylinks" target="_blank">NCG Cinema Movie Showings</a>
               </p>
           </div>
 
@@ -196,7 +173,7 @@
                 <br>Programming Languages
             </h2>
             <h3 class="projectHeader">Course Project</h3>
-            <p><a href="NonMainPages/PythonInterpreter.html" class="bodylinks" target="_blank">Python Interpreter</a>
+            <p><a href="ClassProjects/PythonInterpreter.html" class="bodylinks" target="_blank">Python Interpreter</a>
               </p>
           </div>
 
@@ -207,12 +184,12 @@
               </h2>
               <h3 class="projectHeader">Course Paper:</h3>
                   <p>
-                    <a href="NonMainPages/SoundinUIResearch.html" class="bodylinks" target="_blank">Sound in UI Research Report</a>
+                    <a href="ClassProjects/SoundinUIResearch.html" class="bodylinks" target="_blank">Sound in UI Research Report</a>
                   </p>
               <h3 class="projectHeader">Assignments:</h3>
                 <p><a href="UIE/WordFinder/word-finder.html" class="bodylinks" target="_blank">WordFinder</a>
-                  <br><a href="NonMainPages/MenuApplication.html" class="bodylinks" target="_blank">MenuApplication</a>
-                  <br><a href="Checkers.html" class="bodylinks" target="_blank">Checkers</a> <!--Alt-->
+                  <br><a href="ClassProjects/MenuApplication.html" class="bodylinks" target="_blank">MenuApplication</a>
+                  <br><a href="ClassProjects/Checkers.html" class="bodylinks" target="_blank">Checkers</a> <!--Alt-->
                   <!--<br><a href="UIE/Checkers/index.html" class="bodylinks" target="_blank">Checkers</a>--> <!--Doesn't display properly-->
                   <br><br></p>
           </div>
@@ -237,15 +214,9 @@
     </div>
     -->
 
-    <div class="Footer">
-      <p class="quoteHeader" style="font-size: 100%; line-height: 130%">
-        "Anything worth having is worth working for.
-        <br>
-        Anything worth doing is worth doing well."
-        <br>
-        - Reginald Ferguson
-        </p>
-    </div>
+    <!-- Footer -->
+    <div data-include="Footer.html"></div>
+    <script src="HF-Loader-Script.js"></script>
 
   </body>
 </html>

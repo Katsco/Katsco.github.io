@@ -204,6 +204,8 @@ Body {
 
   .quoteHeader {
     font-family: Georgia;
+    font-size: 16px;
+    line-height: 19px;
   }
   
   .col {

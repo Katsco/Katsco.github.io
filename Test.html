@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Katlin Scott: About</title>
-    <link rel="icon" type="image/x-icon" href="KS.ico"> <!-- Make a custom favicon -->
+    <title>Katlin Scott: Test Page</title>
+    <link rel="icon" type="image/x-icon" href="KS-Initials-BG.ico"> <!-- Make a custom favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Linked CSS Files-->
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="text-roller.css">
+    <link rel="stylesheet" href="text-roller-test.css">
     <link rel="stylesheet" href="TypingEffect.css">
+    <!--<link rel="stylesheet" href="DotEffect.css">-->
 
     <!-- Fonts Here -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -59,8 +60,31 @@
       </script>
   </head>
 
-  <!-- Header -->
-  <div data-include="Header.html"></div>
+  <!-- Create separate pages for everything once index gets sorted -->
+  <body style="margin-top: 49px;" id="home">
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a> <!-- Change this to the actual page rather than a bookmark of the main page -->
+      <a href="ClassProjects.html">Class Projects</a>
+      <!--<a href="">Personal Projects</a>-->
+      <a href="index.html#Contact">Contact</a>
+      <!--
+      <a href="">Community Work</a>
+      <a href="">Competitive Events</a>
+      <a href="">Activities</a>
+      -->
+      <div style="float:right">
+        <a href="mailto:Katlin.Scott1@gmail.com" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
+          <img src="Images/gmail.png" alt="Gmail Icon by Pixel perfect" style="width:20px;height:20px;">
+        </a>
+        <a href="https://www.linkedin.com/in/Katsco" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
+          <img src="Images/linkedin.png" alt="LinkedIn Icon by riajulislam" style="width:20px;height:20px;">
+        </a>
+        <a href="https://www.github.com/Katsco" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
+          <img src="Images/github.png" alt="GitHub Icon by riajulislam" style="width:20px;height:20px;">
+        </a>
+      </div>
+    </div>
     
     <!-- System.out.println("...") Effect -->
     <div class="animBaseRoller" style="color: #EDF2F6; font-family: monospace;">
@@ -78,6 +102,18 @@
       <h1 class="closure">");</h1>
     </div>
 
+
+    <!--
+    <br><br>
+    <div style="text-align:center;">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <br>
+    -->
+
     <div class="intro">
       <h1 class="typing">Hi, my name is Katlin Scott</h1>
       <h2>
@@ -86,36 +122,15 @@
         <span id="text"></span>
       </h2>
     </div>
-
-    <div class="Title">
-      <hr width="84%" color="#6F8A53" size="3px">
-      <h1>About Me</h1>
-      <hr width="84%" color="#6F8A53" size="3px">
-    </div>
-
-    <div class="Body" style="text-align: justify; font-family: 'Courier New', Courier, monospace; padding-top: 50px; padding-bottom: 50px; padding-left: 150px; padding-right: 150px;">
+    
+    <div id="About" class="Body" style="text-align: justify; font-family: 'Courier New', Courier, monospace; padding-top: 50px; padding-bottom: 50px; padding-left: 150px; padding-right: 150px;">
       <p>
         My name is Katlin Scott, and simply, I have a passion for learning about the ever-growing field of technology.
         <br><br>
         I am a graduate from Kennesaw State University with a Bachelor of Science in Computer Science. 
         My passion and interest in technology have driven me to pursue a Computer Science degree and constantly learn about the ever-changing world of the technology around us.
         <br><br>
-        My journey in Computer Science began with my interest in computers and technology when I was a young kid with my family’s home computer and other technology we had around the house. 
-        I discovered that I enjoyed using this technology, and as more and more technology was introduced, I wanted to be a part of the process of learning how to create and produce such technology. 
-        Since then, following me into my undergraduate studies, I discovered my knack for problem-solving and passion for technology and have had a drive to develop my own creations and have a drive to constantly learn about the new technology surrounding us.
-        <br><br>
-        I thrive on solving complex problems and am constantly seeking new challenges to expand my skills and knowledge. 
-        Whether it's coding refined algorithms, designing efficient databases, or crafting intuitive user interfaces, I'm always eager to dive in and tackle projects head-on.
-        <br><br>
-        When I’m not researching and learning new general and specific things about technology, you can find me listening to music, reading, writing, playing games, creating graphics, or messing with Photoshop or Premiere Pro. 
-        I believe that knowledge is power and that if you want to do or learn something, you should go for it and see where it takes you.
-        <br><br>
-        I am passionate about the technology industry. 
-        However, I have a particular interest in software development, and I've enjoyed working on projects such as developing websites, desktop applications, and mobile applications for the Android platform. 
-        Additionally, I'm fascinated by artificial intelligence, machine learning, cybersecurity, and data science, and I've recently worked on a project where my group and I used AI to generate beat maps in our Dynamic Rhythm Game for our Senior Capstone Project.
-        <br><br>
-        Since then, I have had the pleasure and joy of working for Black Book (National Auto Research under Hearst Transportation) as a Data Analyst under the Data Science & Analytics department's Residuals Team. 
-        I analyzed and managed internal datasets, automated processes, and developed tools to improve data quality and operational efficiency.
+        For more information about me, go to my <a href="about.html" target="_blank" class="bodylinks" style="color: rgb(231, 49, 49);">About</a> page!
       </p>
     </div>
 
@@ -138,23 +153,58 @@
         </ul>
     </div>
 
-    <br>
+    <!--
+    <div class="div2" id="team">
+      <hr width="84%" color="#6F8A53" size="3px">
+    </div>
+    -->
 
     <div class="Title">
       <hr width="84%" color="#6F8A53" size="3px">
-      <h1>Resume</h1>
+      <h1>Featured Work</h1>
       <hr width="84%" color="#6F8A53" size="3px">
     </div>
-    <br>
-    <div style="margin-left:auto;margin-right:auto;text-align:center">
-      <object data="/Documents/KatlinScott-Resume-20250829-Redacted.pdf" type="application/pdf" width="75%" height="1000px">
-          <p>Unable to display PDF file. <a href="/Documents/KatlinScott-Resume-20250829-Redacted.pdf">Download</a> instead.</p>
-      </object>
-  </div>
 
-  <!-- Footer -->
-  <div data-include="Footer.html"></div>
-  <script src="HF-Loader-Script.js"></script>
+    <div class="Body" style="text-align: center; font-family: 'Courier New', Courier, monospace;font-size: 20px;">
+      <p>
+        <a href="https://dynamicrhythmteam.github.io/" target="_blank" class="bodylinks">Dynamic Rhythm Game</a>
+      </p>
+    </div>
+
+    <div class="Title">
+      <hr width="84%" color="#6F8A53" size="3px">
+      <h1>Contact Information</h1>
+      <hr width="84%" color="#6F8A53" size="3px">
+    </div>
+
+    <div class="Body" id="Contact" style="text-align: center; font-family: 'Courier New', Courier, monospace">
+      <p>
+        You can contact me by email at <a href="mailto:Katlin.Scott1@gmail.com" target="_blank" class="bodylinks">Katlin.Scott1@gmail.com</a>
+        <br><a href="www.linkedin.com/in/Katsco" target="_blank" class="bodylinks">My LinkedIn</a>
+        <br><a href="www.github.com/Katsco" target="_blank" class="bodylinks">My GitHub</a>
+        <br>
+        <br>
+        <a href="mailto:Katlin.Scott1@gmail.com" target="_blank" class="bodylinks">
+          <img src="Images/gmail.png" alt="Gmail Icon by Pixel perfect" style="width:42px;height:42px;">
+        </a>
+        <a href="https://www.linkedin.com/in/Katsco" target="_blank" class="bodylinks">
+          <img src="Images/linkedin.png" alt="LinkedIn Icon by riajulislam" style="width:42px;height:42px;">
+        </a>
+        <a href="https://www.github.com/Katsco" target="_blank" class="bodylinks">
+          <img src="Images/github.png" alt="GitHub Icon by riajulislam" style="width:42px;height:42px;">
+        </a>
+      </p>
+    </div>
+
+    <div class="Footer">
+      <p class="quoteHeader" style="font-size: 100%; line-height: 130%">
+        "Anything worth having is worth working for.
+        <br>
+        Anything worth doing is worth doing well."
+        <br>
+        - Reginald Ferguson
+        </p>
+    </div>
 
   </body>
 </html>

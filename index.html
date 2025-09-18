@@ -60,36 +60,15 @@
       </script>
   </head>
 
-  <!-- Create separate pages for everything once index gets sorted -->
-  <body style="margin-top: 49px;" id="home">
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a> <!-- Change this to the actual page rather than a bookmark of the main page -->
-      <a href="ClassProjects.html">Class Projects</a>
-      <!--<a href="">Personal Projects</a>-->
-      <a href="index.html#Contact">Contact</a>
-      <!--
-      <a href="">Community Work</a>
-      <a href="">Competitive Events</a>
-      <a href="">Activities</a>
-      -->
-      <div style="float:right">
-        <a href="mailto:Katlin.Scott1@gmail.com" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/gmail.png" alt="Gmail Icon by Pixel perfect" style="width:20px;height:20px;">
-        </a>
-        <a href="https://www.linkedin.com/in/Katsco" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/linkedin.png" alt="LinkedIn Icon by riajulislam" style="width:20px;height:20px;">
-        </a>
-        <a href="https://www.github.com/Katsco" target="_blank" class="bodylinks" style="padding-left: 5px; padding-right: 5px">
-          <img src="Images/github.png" alt="GitHub Icon by riajulislam" style="width:20px;height:20px;">
-        </a>
-      </div>
-    </div>
+  <!-- Header -->
+  <div data-include="Header.html"></div>
     
+    <!-- System.out.println("...") Effect -->
     <div class="animBaseRoller" style="color: #EDF2F6; font-family: monospace;">
       <!--<h2 style="font-size: 35px"></h2>-->
-
-      <h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span>("</h1>
+        <h1>
+            System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span>("
+        </h1>
       
       <div class="string">
         <h1 class="greeting en" style="margin-top:0px;margin-bottom:0px;">Hello World!</h1>
@@ -97,7 +76,7 @@
         <h1 class="greeting es" style="margin-top:0px;margin-bottom:0px;">¡Hola Mundo!</h1>
         <h1 class="greeting it" style="margin-top:0px;margin-bottom:0px;">Ciao Mondo!</h1>
       </div>
-      <h1 class="closure">");</h1> <!--class="closure"-->
+      <h1 class="closure">");</h1>
     </div>
 
     <!--
@@ -193,15 +172,9 @@
       </p>
     </div>
 
-    <div class="Footer">
-      <p class="quoteHeader" style="font-size: 100%; line-height: 130%">
-        "Anything worth having is worth working for.
-        <br>
-        Anything worth doing is worth doing well."
-        <br>
-        - Reginald Ferguson
-        </p>
-    </div>
+    <!-- Footer -->
+    <div data-include="Footer.html"></div>
+    <script src="HF-Loader-Script.js"></script>
 
   </body>
 </html>

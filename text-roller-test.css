@@ -79,11 +79,11 @@
   10% {transform: translateY(0vmin);} /* Pause */
 
   25% { transform: translateY(-5vmin); }
-  35% { transform: translateY(-5vmin); } /* Pause */
+  30% { transform: translateY(-5vmin); } /* Pause */
 
   50% { transform: translateY(-10vmin); }
-  60% { transform: translateY(-10vmin); } /* Pause */
+  55% { transform: translateY(-10vmin); } /* Pause */
 
   75% { transform: translateY(-15vmin); }
-  85% { transform: translateY(-15vmin); }  /* Pause */
+  80% { transform: translateY(-15vmin); }  /* Pause */
 }
