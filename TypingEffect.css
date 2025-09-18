@@ -10,25 +10,41 @@
     align-items: center;
 }
 
+.intro {
+  text-align: center;        /* centers everything inside */
+  color: white;
+  /*font-family: monospace;*/
+  font-family: Fira Mono;
+  font-size: 11px;
+}
+
 .typing {
-    position: relative;
-    width: 43ch;
-    font-weight: bold;
-    animation: type 5s steps(43), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
+  display: inline-block;      /* shrink-wrap so cursor aligns with text */
+  white-space: nowrap;        /* prevents wrapping during typing */
+  border-right: 2px solid white; /* cursor */
+  overflow: hidden;           /* hide text until "typed" */
+  animation: typing 4s steps(27, end), blink .7s step-end infinite;
 }
 
-@keyframes type {
-    0% {
-        width: 0;
-    }
+.design {
+  font-size: 25px;
+  font-family: serif;
 }
 
+.develop {
+  font-size: 23px;
+  font-family: monospace;
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0ch; }
+  to { width: 27ch; } /* exact character count instead of percentages*/
+}
+
+/* blinking caret */
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  50% { border-color: transparent; }
 }
+
 
