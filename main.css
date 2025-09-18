@@ -1,3 +1,13 @@
+/* Google Fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Iso');
+@import url('https://fonts.googleapis.com/css?family=Bagel+Fat+One');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+
 html {
   scroll-behavior: smooth;
   color: white;
